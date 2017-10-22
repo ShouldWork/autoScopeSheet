@@ -30,7 +30,7 @@ export class Password {
 
   signInWithEmail() {
     const loading = this.loadingCtrl.create({
-      content: 'Por favor, aguarde...'
+      content: 'Please wait...'
     });
     loading.present();
 
@@ -42,10 +42,10 @@ export class Password {
       loading.dismiss();
       switch (error.code) {
         case 'auth/invalid-email':
-          this.errorMessage = 'Insira um email válido.';
+          this.errorMessage = 'Please enter a valid email address.';
           break;
         case 'auth/user-not-found':
-          this.errorMessage = 'Nenhum usuário com este email encontrado.';
+          this.errorMessage = 'No user with this email found.';
           break;
         default:
           this.errorMessage = error;

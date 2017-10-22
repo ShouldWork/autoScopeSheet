@@ -37,12 +37,23 @@ $orange: #F07626;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:(
+    base: #5716FF,
+    contrast: #FFFFFF
+  ),
+  secondary:(
+    base: #FFA633,
+    contrast: #FFFFFF
+  ),
+  danger:     #FF3300,
+  light:      #CCCCCC,
+  dark:       #333333,
+  toolbar:(
+    base: #CC3617,
+    contrast: #FFFFFF
+  )
 );
+
 
 // App iOS Variables
 // --------------------------------------------------

@@ -19,12 +19,12 @@ import { DataProvider } from '../providers/data/data';
 import { FunctionsProvider } from '../providers/functions/functions';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDcbsUEReGm_dlijVXC1sMCcqKpCsXt0nQ',
-  authDomain: 'ionic2-angularfire-login-14ea3.firebaseapp.com',
-  databaseURL: 'https://ionic2-angularfire-login-14ea3.firebaseio.com',
-  projectId: 'ionic2-angularfire-login-14ea3',
-  storageBucket: 'ionic2-angularfire-login-14ea3.appspot.com',
-  messagingSenderId: '438127821589'
+  apiKey: "AIzaSyCffvKXHOWCYCspLekyk8avkqnf-fHSAcU",
+  authDomain: "auto-scope-sheet.firebaseapp.com",
+  databaseURL: "https://auto-scope-sheet.firebaseio.com",
+  projectId: "auto-scope-sheet",
+  storageBucket: "auto-scope-sheet.appspot.com",
+  messagingSenderId: "604936419062"
 };
 
 @NgModule({

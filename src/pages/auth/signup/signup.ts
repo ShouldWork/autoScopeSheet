@@ -35,7 +35,7 @@ export class Signup {
 
   signUp() {
     const loading = this.loadingCtrl.create({
-      content: 'Estamos criando um usuário para você...'
+      content: 'We are creating a user for you ...'
     });
     loading.present();
 
@@ -46,13 +46,13 @@ export class Signup {
       loading.dismiss();
       switch (error.code) {
         case 'auth/invalid-email':
-          this.errorMessage = 'Insira um email válido.';
+          this.errorMessage = 'Please enter a valid email address.';
           break;
         case 'auth/weak-password':
-          this.errorMessage = 'A senha deve possuir pelo menos 6 caracteres.';
+          this.errorMessage = 'The password must be at least 6 characters long.';
           break;
         case 'auth/email-already-in-use':
-          this.errorMessage = 'Este email já foi usado em outra conta.';
+          this.errorMessage = 'This email has already been used for another account.';
           break;
         default:
           this.errorMessage = error;
